@@ -636,59 +636,91 @@ jmeter:
 
 # mapping for prometheus linux
 prometheuslinux:
-  - name: prometheuslinux
-    interval: 300
-    config:
-    - Mandatory: true
-      min: ''
-      dataType: Integer
-      max: ''
-      defaultValue: 9100
-      tooltip: "port in which node-exporter is exposed on localhost"
-      label: Port
-      fieldName: port
+ - name: prometheuslinux
+   interval: 300
+   config:
+   - Mandatory: true
+     min: ''
+     dataType: Integer
+     max: ''
+     defaultValue: 9100
+     tooltip: "port in which node-exporter is exposed on localhost"
+     label: Port
+     fieldName: port
+   - Mandatory: true
+     min: ''
+     dataType: Integer
+     max: ''
+     defaultValue: 300
+     tooltip: Polling Interval
+     label: Interval
+     fieldName: interval
 
 #mapping for prometheus mysql
 prometheusmysql:
-  - name: prometheusmysql
-    interval: 300
-    config:
-    - Mandatory: true
-      min: ''
-      dataType: Integer
-      max: ''
-      defaultValue: 9104
-      tooltip: "port in which mysql-exporter is exposed on localhost"
-      label: Port
-      fieldName: port
+ - name: prometheusmysql
+   interval: 300
+   config:
+   - Mandatory: true
+     min: ''
+     dataType: Integer
+     max: ''
+     defaultValue: 9104
+     tooltip: "port in which mysql-exporter is exposed on localhost"
+     label: Port
+     fieldName: port
+   - Mandatory: true
+     min: ''
+     dataType: Integer
+     max: ''
+     defaultValue: 300
+     tooltip: Polling Interval
+     label: Interval
+     fieldName: interval
 
 # mapping for prometheus jmx
-prometheuslinux:
-  - name: prometheusjmx
-    interval: 300
-    config:
-    - Mandatory: true
-      min: ''
-      dataType: Integer
-      max: ''
-      defaultValue: 9404
-      tooltip: "port in which jmx-exporter is exposed on localhost"
-      label: Port
-      fieldName: port
+prometheusjmx:
+ - name: prometheusjmx
+   interval: 300
+   config:
+   - Mandatory: true
+     min: ''
+     dataType: Integer
+     max: ''
+     defaultValue: 9404
+     tooltip: "port in which jmx-exporter is exposed on localhost"
+     label: Port
+     fieldName: port
+   - Mandatory: true
+     min: ''
+     dataType: Integer
+     max: ''
+     defaultValue: 300
+     tooltip: Polling Interval
+     label: Interval
+     fieldName: interval
 
 #mapping for prometheus elasticsearch
-prometheusmysql:
-  - name: prometheuselasticsearch
-    interval: 300
-    config:
-    - Mandatory: true
-      min: ''
-      dataType: Integer
-      max: ''
-      defaultValue: 9206
-      tooltip: "port in which elasticsearch-exporter is exposed on localhost"
-      label: Port
-      fieldName: port
+prometheuselasticsearch:
+ - name: prometheuselasticsearch
+   interval: 300
+   config:
+   - Mandatory: true
+     min: ''
+     dataType: Integer
+     max: ''
+     defaultValue: 9206
+     tooltip: "port in which elasticsearch-exporter is exposed on localhost"
+     label: Port
+     fieldName: port
+   - Mandatory: true
+     min: ''
+     dataType: Integer
+     max: ''
+     defaultValue: 300
+     tooltip: Polling Interval
+     label: Interval
+     fieldName: interval
 
 #mapping for esa plugin
 #esalogstore:
